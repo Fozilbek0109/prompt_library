@@ -9,7 +9,7 @@ o_zgaruvchilar:
   - "{{min_sdk}}"
   - "{{target_sdk}}"
 sinovdan_o_tgan: "2026-08"
-muallif: [muallif ismi]
+muallif: Fozilbek Karimov
 ---
 
 ## Prompt
