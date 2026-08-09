@@ -9,7 +9,7 @@ o_zgaruvchilar:
   - "{{error_message}}"
   - "{{language_hint}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Shakhbozbek Usmonov
+muallif: Fozilbek Karimov
 ---
 
 ## Prompt
