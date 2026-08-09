@@ -23,10 +23,12 @@ prompts-library/
 ├── kontent/                # Kontent yaratish promptlari
 │   ├── blog-post-writer.md
 │   └── social-media-copy.md
-└── agentlar/               # AI agent uchun system promptlar
-    ├── research-agent.md
-    ├── code-review-agent.md
-    └── meeting-summarizer.md
+├── agentlar/               # AI agent uchun system promptlar
+│   ├── research-agent.md
+│   ├── code-review-agent.md
+│   └── meeting-summarizer.md
+└── testapp/                # Android loyihalarini test qilish
+    └── ieee-829-test-plan.md
 ```
 
 ## Kategoriyalar
@@ -37,6 +39,7 @@ prompts-library/
 | **tahlil** | Ma'lumot tahlili, SWOT, raqobat tahlili | 3 |
 | **kontent** | Blog yozish, ijtimoiy tarmoq postlari | 2 |
 | **agentlar** | Tadqiqot, kod review, uchrashuv xulosasi | 3 |
+| **testapp** | Android Kotlin XML loyihalarini IEEE 829 bo'yicha test qilish | 1 |
 
 ## Har bir prompt fayli tarkibi
 
@@ -64,7 +67,7 @@ muallif: Shakhbozbek Usmonov
 | Maydon | Tavsif |
 |---|---|
 | `nomi` | Prompt nomi (inglizcha, kichik harflar, chiziq bilan ajratilgan) |
-| `kategoriyasi` | Kategoriya: `dasturlash`, `tahlil`, `kontent`, `agentlar` |
+| `kategoriyasi` | Kategoriya: `dasturlash`, `tahlil`, `kontent`, `agentlar`, `testapp` |
 | `maqsadi` | Prompt nimaga kerak — qisqacha tavsif |
 | `versiya` | Semver format: `1.0`, `1.3`, `2.0` |
 | `model` | Qaysi AI model bilan sinovdan o'tkazilgan |
@@ -89,7 +92,7 @@ Metama'lumotdan keyin quyidagi bo'limlar ketma-ketlikda keladi:
 
 ## Yangi prompt qo'shish
 
-1. Tegishli kategoriya papkasiga o'ting (`dasturlash/`, `tahlil/`, `kontent/`, `agentlar/`)
+1. Tegishli kategoriya papkasiga o'ting (`dasturlash/`, `tahlil/`, `kontent/`, `agentlar/`, `testapp/`)
 2. Mavjud promptlardan birini nusxalang va nomini o'zgartiring
 3. YAML frontmatter ni to'ldiring
 4. Prompt matnini yuqoridagi 6 bo'lim bo'yicha yozing
