@@ -8,7 +8,7 @@ o_zgaruvchilar:
   - "{{api_spec}}"
   - "{{domain}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Shakhbozbek Usmonov
+muallif: Fozilbek Karimov
 ---
 
 ## Prompt
