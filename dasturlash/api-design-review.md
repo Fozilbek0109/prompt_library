@@ -2,13 +2,13 @@
 nomi: api-design-review
 kategoriyasi: dasturlash
 maqsadi: REST API dizaynini eng yaxshi amaliyotlar bo'yicha tekshirish
-versiya: 1.0
+versiya: 1.1
 model: GPT-4o
 o_zgaruvchilar:
   - "{{api_spec}}"
   - "{{domain}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt
@@ -39,6 +39,7 @@ Each item should follow this format:
 - Focus ONLY on API design quality (not authentication, database, or deployment)
 - Provide concrete corrected examples, not abstract advice
 - Limit to 15 findings maximum
+- Do NOT flag an API pattern or specification version as "outdated" or "non-standard" based solely on your training data. REST and OpenAPI standards evolve — if unsure, note it as "verify against latest OpenAPI specification"
 
 **Example:**
 

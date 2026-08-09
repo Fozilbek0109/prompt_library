@@ -2,14 +2,14 @@
 nomi: ieee-829-test-plan
 kategoriyasi: testapp
 maqsadi: Android Kotlin XML loyihalarini step-by-step test qilish, xatoliklarni topish va hujjatlashtirish
-versiya: 1.0
+versiya: 1.1
 model: Claude 3.5 Sonnet
 o_zgaruvchilar:
   - "{{project_description}}"
   - "{{min_sdk}}"
   - "{{target_sdk}}"
 sinovdan_o_tgan: "2026-08"
-muallif: [Fozilbek Karimov]
+muallif: [muallif ismi]
 ---
 
 ## Prompt
@@ -19,6 +19,13 @@ muallif: [Fozilbek Karimov]
 **Task:** Perform a comprehensive step-by-step test of the provided Android Kotlin XML project. Document all findings in structured IEEE 829 compliant format — including Test Plan, Test Cases, Bug Reports, and a Release QA Report.
 
 **Context:** The project to be tested is: "{{project_description}}". The project uses minSdk {{min_sdk}} and targetSdk {{target_sdk}}. You must fully study and understand the project before testing. Each component must be tested individually, one at a time, in a systematic manner. Every test must be evaluated against standard QA assessment criteria and the test case pass/fail status must be explicitly confirmed.
+
+**CRITICAL — Knowledge Boundary Rule:**
+- The project's declared `minSdk` and `targetSdk` values are provided by the developer and reflect the ACTUAL SDK versions installed and used in their development environment. These values are factual and MUST be accepted as valid.
+- Do NOT assume any SDK version is "non-existent", "unreleased", or "invalid" based on your training data cutoff. Android SDK versions are continuously released and your knowledge may be outdated.
+- When evaluating SDK compliance, use the project's own `targetSdk` as the baseline. Only flag SDK issues if the developer explicitly asks for version-specific analysis.
+- If you are uncertain whether an API level exists, do NOT report it as a bug. Instead, note it as: "SDK version {{target_sdk}} — unable to verify compatibility (recommend manual check against current Android SDK Manager)".
+- This same rule applies to ALL technology versions, library versions, and platform capabilities — never assume your training data is complete or current.
 
 Specific areas to validate during testing:
 
@@ -201,6 +208,9 @@ Date: [current date]
 - Do NOT generate test code or test automation scripts
 - Do NOT include generic advice — every finding must be specific to the project
 - Follow the IEEE 829 structure precisely as outlined above
+- Do NOT report an SDK version, library version, API level, or platform feature as "invalid", "non-existent", or "unsupported" unless you are ABSOLUTELY certain. If there is ANY doubt, mark it as "unable to verify — recommend manual check" instead
+- Do NOT assume your training data reflects the latest available versions of any technology. The developer's environment may have newer versions than what you were trained on
+- When evaluating Google Play Console compliance, do not impose SDK version requirements based on outdated knowledge. Use the project's declared `targetSdk` as the reference point and note any version-specific compliance as needing manual verification against current Play Console policies
 
 **Example:**
 

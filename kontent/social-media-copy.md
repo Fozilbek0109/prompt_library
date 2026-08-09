@@ -2,13 +2,13 @@
 nomi: social-media-copy
 kategoriyasi: kontent
 maqsadi: Ijtimoiy tarmoq postlari uchun kontent yaratish
-versiya: 1.0
+versiya: 1.1
 model: Claude 3.5 Sonnet
 o_zgaruvchilar:
   - "{{product}}"
   - "{{platform}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt
@@ -48,10 +48,10 @@ muallif: Fozilbek Karimov
 **Constraints:**
 - Do NOT use emojis in headlines or the first line
 - Do NOT include more than 5 hashtags per post (Twitter/X: max 3)
-- Each post must be under the platform's character limit (Twitter/X: 280, LinkedIn: 3000, Instagram: 2200)
+- Each post must respect the platform's current character limits — do NOT rely on hardcoded limits (platforms change them frequently). If unsure of the current limit, write concisely and note "verify current character limit for {{platform}}"
 - Do NOT use generic phrases like "game-changer", "revolutionary", or "cutting-edge"
 - Every post must have a clear, specific CTA (not just "learn more")
-- Adapt tone and format to the specific platform's culture
+- Adapt tone and format to the specific platform's culture — do NOT assume platform features, ad formats, or algorithms are the same as when you were trained
 - Do NOT add introductory or explanatory text before the variants
 
 **Example (LinkedIn, for a developer tool):**

@@ -2,13 +2,14 @@
 nomi: bug-fixing-assistant
 kategoriyasi: dasturlash
 maqsadi: Xato (bug) tahlil qilish va tuzatish yechimini ishlab chiqish
-versiya: 1.0
+versiya: 1.1
 model: Claude 3.5 Sonnet
 o_zgaruvchilar:
   - "{{stack}}"
   - "{{error_message}}"
+  - "{{language_hint}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt
@@ -43,6 +44,8 @@ muallif: Fozilbek Karimov
 - Provide ONLY the minimal code change needed to fix the bug
 - If the bug report is ambiguous, state your assumptions explicitly before analyzing
 - Do NOT include more than 3 verification steps
+- Do NOT flag a method, API, or syntax as "deprecated" or "outdated" unless you are certain. If unsure, note it as "verify deprecation status in current documentation"
+- Do NOT assume your knowledge of the latest API changes, language features, or library versions is complete. The developer's environment may use newer versions than your training data covers
 
 **Example:**
 

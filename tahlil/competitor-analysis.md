@@ -8,7 +8,7 @@ o_zgaruvchilar:
   - "{{product}}"
   - "{{competitors}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt

@@ -8,7 +8,7 @@ o_zgaruvchilar:
   - "{{research_question}}"
   - "{{depth}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt
@@ -48,20 +48,24 @@ Numbered list of 2-4 specific actions
 - Do NOT include speculation presented as fact — clearly label any estimates
 - Do NOT add filler or padding to meet length requirements
 - Every factual claim must reference a source or be marked as [unverified]
+- Do NOT treat the Example section as factual data — it uses placeholder values for format demonstration only
+- Do NOT assume any statistics, market data, or version numbers from your training data are still current. If you cannot verify, mark as [unverified]
 - For "quick-scan" depth: max 500 words. For "standard": 800-1,200 words. For "deep-dive": 1,500-2,000 words
 - Do NOT include more than 8 findings or 5 data points
 
 **Example:**
 
+> **NOTE:** The example below uses fictional data for format demonstration only. Do NOT treat these numbers as real facts.
+
 **Research Brief: What is the current market share of major cloud providers?**
 
 **1. Summary**
-AWS leads the global cloud infrastructure market with approximately 31% share as of Q1 2026, followed by Azure at 25% and Google Cloud at 11%. The market grew 19% year-over-year, with AI-related cloud services being the primary growth driver.
+AWS leads the global cloud infrastructure market with approximately 31% share as of Q1 [year], followed by Azure at 25% and Google Cloud at 11%. The market grew 19% year-over-year, with AI-related cloud services being the primary growth driver.
 
 **2. Key Findings**
-- AWS maintains the largest market share at 31% — *Source: Synergy Research Group, Q1 2026*
-- Azure is the fastest-growing major provider at 29% YoY growth — *Source: Microsoft Q3 FY2026 Earnings*
-- Google Cloud reached operating profitability for the first time in 2025 — *Source: Alphabet Q4 2025 Earnings*
+- AWS maintains the largest market share at 31% — *Source: [Synergy Research Group, Q1 year]*
+- Azure is the fastest-growing major provider at 29% YoY growth — *Source: [Microsoft Earnings Report]*
+- Google Cloud reached operating profitability — *Source: [Alphabet Earnings Report]*
 
 ---
 

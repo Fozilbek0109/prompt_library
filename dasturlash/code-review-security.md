@@ -2,13 +2,13 @@
 nomi: code-review-security
 kategoriyasi: dasturlash
 maqsadi: Pull Request ni xavfsizlik bo'yicha tekshirish
-versiya: 1.0
+versiya: 1.1
 model: Claude 3.5 Sonnet
 o_zgaruvchilar:
   - "{{stack}}"
   - "{{pr_description}}"
 sinovdan_o_tgan: "2026-08"
-muallif: Fozilbek Karimov
+muallif: Shakhbozbek Usmonov
 ---
 
 ## Prompt
@@ -36,6 +36,8 @@ After the table, provide a summary section with:
 - Focus ONLY on security issues (not style, performance, or architecture)
 - Each finding must reference a specific file and approximate line number
 - Do NOT exceed 20 findings — prioritize by actual risk, not theoretical possibility
+- Do NOT flag a library, framework, or API as "deprecated", "vulnerable", or "outdated" based solely on your training data. Only report security issues that are evident in the code provided. If a library version is specified, do not assume your vulnerability database is current — note it as "verify against latest CVE database"
+- Do NOT assume your knowledge of the latest security best practices, language features, or framework versions is complete. The developer's environment may use newer, patched versions than your training data covers
 
 **Example:**
 
