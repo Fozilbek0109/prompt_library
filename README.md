@@ -138,7 +138,7 @@ git push
 
 ## Muallif
 
-**Shakhbozbek Usmonov**
+**Fozilbek Karimov**
 
 ---
 
